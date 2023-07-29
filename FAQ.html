@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frequently Asked Questions (FAQs)</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Open+Sans:wght@300&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Merriweather+Sans&family=Open+Sans:wght@300&display=swap"
+        rel="stylesheet">
+    
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <img src="Distrix-transparent.png" alt="company logo">
+        </a>
+        <nav>
+            <!-- Hamburger menu icon for mobile -->
+            <div class="burger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+    
+            <!-- The navigation menu items -->
+            <ul class="menu-items">
+                <li><a href="index.html" style="color: black;">Home</a></li>
+                <li><a href="waitlist.html" style="color: black;">Waitlist</a></li>
+                <li><a href="FAQ.html" style="color: black;">FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="Faq-container">
+    <h1>Frequently Asked Questions (FAQs)</h1>
+
+    <div class="faq">
+        <div class="question">
+            <h3>1. How does DistriX optimize deadhead trips for truckers?</h3>
+            <button class="toggle-btn">+</button>
+        </div>
+        <div class="answer">
+            <p>DistriX leverages an AI-powered system to match truckers with deadhead trips to the original routes of
+                their cargo deliveries. This ensures that truckers have a load to carry on their return journey,
+                maximizing revenue potential while offering transportation at a significantly lower fee due to the
+                deadhead nature of the trip.</p>
+        </div>
+            <div class="faq">
+                <div class="question">
+                    <h3>2. How can wholesalers upload their products onto the DistriX web app?</h3>
+                    <button class="toggle-btn">+</button>
+                </div>
+        <div class="answer">
+            <p>Wholesalers can access the DistriX web app using their assigned credentials and navigate to the product
+                        upload section. They can fill in the required product details, upload product images, specify shipping
+                        requirements, and submit the product listing for verification and approval by the DistriX operations
+                        team.</p>
+                </div>
+            </div>
+            
+        <div class="faq">
+            <div class="question">
+                    <h3>3. Can retailers track the status of their orders?</h3>
+                    <button class="toggle-btn">+</button>
+                </div>
+            <div class="answer">
+                    <p>Yes, retailers can track the status of their orders through the DistriX web app. They can view updates on
+                        order processing, pickup, and delivery stages. Additionally, they can communicate directly with the
+                        truckers for real-time updates on the delivery status.</p>
+                </div>
+            </div>
+            
+        <div class="faq">
+            <div class="question">
+                    <h3>4. How can I provide feedback or report an issue with the DistriX operations?</h3>
+                    <button class="toggle-btn">+</button>
+                </div>
+            <div class="answer">
+                    <p>You can provide feedback or report any issues or concerns by contacting the DistriX operations team
+                        directly. They will address your feedback and work towards resolving any issues promptly to ensure a
+                        smooth experience within the DistriX network.</p>
+                </div>
+         </div>
+        </div>
+    </div>
+
+    <!-- Add other FAQ sections here -->
+
+    <script>
+        // JavaScript code to toggle the visibility of answers
+        const toggleBtns = document.querySelectorAll('.toggle-btn');
+        toggleBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const answer = btn.parentElement.nextElementSibling;
+                answer.classList.toggle('show');
+            });
+        });
+    </script>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <!-- Column One -->
+                <div class="footer-logo">
+                    <img src="Distrix-transparent.png" alt="Company Logo">
+                </div>
+                <p>DistriX is a US registered tech company focused in logistics & e-commerce by utilizing the power of AI to
+                    optimize the processes of its users enabling them to increase their profits.</p>
+                <div class="social-icons">
+                    <!-- Add your social media icons here -->
+                    <a href="https://www.facebook.com/distrixai"><img src="facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="linkedin.png" alt="LinkedIn"></a>
+                    <!-- Add more social media icons as needed -->
+                </div>
+            </div>
+    
+            <div class="footer-column">
+                <!-- Column Two -->
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#"><span style="color: black;">Policy</span></a></li>
+                    <li><a href="#"><span style="color: black;">Terms &amp; Conditions</span></a></li>
+                    <li><a href="#"><span style="color: black;">Cookies Policy</span></a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-column">
+                <!-- Column Three -->
+                <h3>Contact Us</h3>
+                <ul class="contact-info">
+                    <li><img src="phone-call.png" alt="Phone Icon"><span style="color:black">Phone: ++++++++++</span></li>
+                    <li><img src="email.png" alt="Mail Icon"><span style="color:black"> hello@distrix.ai</span></li>
+                    <li><img src="location.png" alt="Map Icon"><span style="color:black"> N Broad St. Suite 201 Middletown
+                            19709 Delaware US </span></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
