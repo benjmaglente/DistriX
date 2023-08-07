@@ -1,9 +1,12 @@
 .navbar-container {
-    background-color: none;
+    background-color: transparent;
+    /* Set a background color or use 'transparent' for transparency */
     margin-top: 20px;
     /* Set the desired background color for the navigation bar */
 }
 
+/* This block is removed as it's a duplicate */
+/*
 header {
     display: flex;
     align-items: center;
@@ -14,8 +17,9 @@ header {
     margin-left: 30px;
     margin-top: 20px;
     background-color: none;
-    /* Set the same background color as the navbar container */
+    // Set the same background color as the navbar container
 }
+*/
 
 header img {
     max-height: 150px;
@@ -38,7 +42,6 @@ nav ul {
 
 nav li {
     margin: 0 10px;
-    
 }
 
 nav a {
@@ -46,13 +49,11 @@ nav a {
     text-decoration: none;
     padding: 5px 10px;
     border-radius: 10px;
-    transition: background-color 0.3 ease;
-    
+    transition: background-color 0.3s ease;
 }
 
 nav a:hover {
     background-color: #f66b2a;
-
 }
 
 body {
@@ -62,20 +63,14 @@ body {
     background-color: #f0f0f0;
 }
 
-header {
-    text-align: center;
-    background-color: none;
-    color: #fff;
-    padding: 10px;
-    
-}
-
-main {
-    padding: 20px;
-}
-
 /* Reset default margin and padding for the whole page */
-body, h1, h2, h3, p, ul, li {
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
     margin: 40px;
     padding: 0;
 }
@@ -84,115 +79,67 @@ body {
     font-family: 'Open Sans', sans-serif;
     line-height: 1.6;
     color: #333;
-    background-color: #f7f7f7;
-}
-
-h1 {
-    text-align: center;
-    margin-top: 30px;
-    font-size: 36px;
-    font-weight: bold;
-    color: #210a0a;
-    font-family: 'Merriweather Sans', sans-serif;
-}
-
-.Faq-container {
-    margin-left: 50px;
-    margin-right: 50px;
-    
-   
-}
-.faq {
-    border: 1px solid #f58d17;
-    border-radius: 10px;
-    margin: 20px 0;
-    padding: none;
-    font-family: "Merriweather Sans", sans-serif;
-    font-size: 12px;
-}
-
-.question {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    cursor: pointer;
- 
-}
-
-.question h3 {
-    flex: 1;
-}
-
-.toggle-btn {
-    font-size: 20px;
-    border: none;
-    background-color: rgb(244, 138, 46);
-    cursor: pointer;
-}
-
-.answer {
-    display: none;
-    padding-top: 2px;
-}
-
-.answer p {
-    font-size: 12px;
-}
-.show {
-    display: block;
-}
-
-.waitlist-container {
-    background-color: #f7dac3;
-    padding: 20px;
-    color: rgb(51, 39, 39);
-    font-size: 24px;
-    border-radius: 20px;
-    margin-right: 30px;
-    margin-left: 30px;
-    margin-top: 30px;
-}
-
-.waitlist-container h2 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-#waitlist-form {
+    background-color: #f9f9f9;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
-.form-group {
-    margin-bottom: 20px;
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-label {
-    font-weight: bold;
-    margin-bottom: 5px;
+header {
+    background-color: #f7dac3;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 20px;
 }
 
-input,
-select {
-    width: 100%;
-    padding: 8px;
+.logo {
+    max-height: 80px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin-right: 30px;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #210a0a;
+    padding: 8px 15px;
     border-radius: 5px;
-    border: 1px solid #ccc;
-    font-size: 16px;
+    transition: background-color 0.3s;
 }
 
-button {
+nav a:hover {
     background-color: #f66b2a;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
+    color: #fff;
 }
 
-button:hover {
-    background-color: #f48b4a;
+.banner {
+    background-color: rgb(255, 111, 0);
+    color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.banner h1 {
+    font-size: 36px;
+}
+
+.banner p {
+    font-size: 24px;
 }
 
 footer {
@@ -212,7 +159,6 @@ footer {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-
 }
 
 .footer-column {
@@ -273,18 +219,4 @@ ul.contact-info img {
 .contact-info img {
     max-height: 20px;
     max-width: 20px;
-}
-
-.waitlist-heading-container {
-    background-color: #f66b2a;
-    border-radius: 15px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    margin-left: 30px;
-    margin-right: 30px;
-
-}
-
-.waitlist-heading-container h1 {
-    color: #fff;
 }
